@@ -3,7 +3,7 @@
  * Plugin Name: The Blab.im Plugin
  */
 
-function blab_shortcode( $att ) {
+function blab_shortcode( $atts ) {
 	$a = shortcode_atts( array(
 		'user' => '',
 	), $atts );
