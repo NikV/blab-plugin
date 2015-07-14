@@ -10,7 +10,7 @@
  */
 
 /**
- * The main Blab shortcode function
+ * The main Blab shortcode function ( Ex: [blab user=""] )
  *
  * @param array $atts The Shortcode Attributes
  */
@@ -19,9 +19,8 @@ function blab_shortcode( $atts ) {
 		'user' => '',
 	), $atts );
 
-	$echo =  $a['user'];
-	echo $echo;
-	echo "<iframe src='https://blab.im/$echo' height='700px' width='100%'></iframe>";
+	$username =  $a['user'];
+	echo "<iframe src='https://blab.im/$username' height='700px' width='100%'></iframe>";
 
 }
 
